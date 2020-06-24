@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Trello-Like</title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+  <div class="board-layout">
+    <div class="left">
+      <div class="board-text">Today Board</div>
+    </div>
+
+    <div id="boardlists" class="board-lists">
+      <div id="list1" class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+        <div class="list-title">
+          To Do
+        </div>
+
+        <div id="card1" class="card" draggable="true" ondragstart="dragStart(event)">
+          Work on app designing
+        </div>
+        <div id="card2" class="card" draggable="true" ondragstart="dragStart(event)">
+          Initiate components for the app
+        </div>
+        <div id="card3" class="card" draggable="true" ondragstart="dragStart(event)">
+          Start writing code for the given design
+        </div>
+        <div id="card4" class="card" draggable="true" ondragstart="dragStart(event)">
+          Debugg app for any issues
+        </div>
+        <div id="card5" class="card" draggable="true" ondragstart="dragStart(event)">
+          Upload in GitHub and host in server
+        </div>
+      </div>
+      <div id="list2" class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+        <div class="list-title">
+          In Progress
+        </div>
+      </div>
+      <div id="list3" class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+        <div class="list-title">
+          Done
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
