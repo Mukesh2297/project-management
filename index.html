@@ -15,33 +15,33 @@
     </div>
 
     <div id="boardlists" class="board-lists">
-      <div id="list1" class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+      <div id="list1" class="board-list" ondrop="dropCard(event)" ondragover="placeDraggedCard(event)">
         <div class="list-title">
           To Do
         </div>
 
-        <div id="card1" class="card" draggable="true" ondragstart="dragStart(event)">
+        <div id="card1" class="card" draggable="true" ondragstart="dragCard(event)">
           Work on app designing
         </div>
-        <div id="card2" class="card" draggable="true" ondragstart="dragStart(event)">
+        <div id="card2" class="card" draggable="true" ondragstart="dragCard(event)">
           Initiate components for the app
         </div>
-        <div id="card3" class="card" draggable="true" ondragstart="dragStart(event)">
+        <div id="card3" class="card" draggable="true" ondragstart="dragCard(event)">
           Start writing code for the given design
         </div>
-        <div id="card4" class="card" draggable="true" ondragstart="dragStart(event)">
+        <div id="card4" class="card" draggable="true" ondragstart="dragCard(event)">
           Debugg app for any issues
         </div>
-        <div id="card5" class="card" draggable="true" ondragstart="dragStart(event)">
+        <div id="card5" class="card" draggable="true" ondragstart="dragCard(event)">
           Upload in GitHub and host in server
         </div>
       </div>
-      <div id="list2" class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+      <div id="list2" class="board-list" ondrop="dropCard(event)" ondragover="placeDraggedCard(event)">
         <div class="list-title">
           In Progress
         </div>
       </div>
-      <div id="list3" class="board-list" ondrop="dropIt(event)" ondragover="allowDrop(event)">
+      <div id="list3" class="board-list" ondrop="dropCard(event)" ondragover="placeDraggedCard(event)">
         <div class="list-title">
           Completed Tasks
         </div>

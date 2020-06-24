@@ -1,16 +1,14 @@
-function allowDrop(ev) {
-  ev.preventDefault();
-}
-function dragStart(ev) {
-  ev.dataTransfer.setData("text/plain", ev.target.id);
-}
-function dropIt(ev) {
-  ev.preventDefault();
-  let sourceId = ev.dataTransfer.getData("text/plain");
+const dragCard = (event) => {
+  event.dataTransfer.setData("text/plain", event.target.id);
+};
+
+const dropCard = (event) => {
+  event.preventDefault();
+  let sourceId = event.dataTransfer.getData("text/plain");
   let sourceIdEl = document.getElementById(sourceId);
   let sourceIdParentEl = sourceIdEl.parentElement;
 
-  let targetEl = document.getElementById(ev.target.id);
+  let targetEl = document.getElementById(event.target.id);
   let targetParentEl = targetEl.parentElement;
 
   if (targetParentEl.id !== sourceIdParentEl.id) {
@@ -29,4 +27,8 @@ function dropIt(ev) {
     sourceIdEl.textContent = holderText;
     holderText = "";
   }
-}
+};
+
+const placeDraggedCard = (event) => {
+  event.preventDefault();
+};
